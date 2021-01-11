@@ -1,10 +1,10 @@
-public class workers {
+public class Workers {
     private String fullName;
     private String position;
     private String email;
     private String phone;
     private double salary;
-    private String age;
+    private int age;
 
     public void getFullInfo(){
         System.out.println("Full name: " + fullName);
@@ -16,7 +16,7 @@ public class workers {
     }
 
 
-    public workers(String fullName, String surname, String patronymic, String position, String email, String phone, double salary, String age) {
+    public Workers(String fullName, String position, String email, String phone, double salary, int age) {
         this.fullName = fullName;
         this.position = position;
         this.email = email;
@@ -46,7 +46,7 @@ public class workers {
         return salary;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 }
