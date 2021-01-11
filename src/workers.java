@@ -6,16 +6,15 @@ public class workers {
     private double salary;
     private String age;
 
-
-    public workers() {
+    public void getFullInfo(){
+        System.out.println("Full name: " + fullName);
+        System.out.println("Position: " + position);
+        System.out.println("EMAIL: " + email);
+        System.out.println("Phone: " + phone);
+        System.out.println("Salary: " + salary);
+        System.out.println("Age: " + age);
     }
 
-    public workers(String fullName, String surname, String patronymic, String email, String phone, String age) {
-        this.fullName = fullName;
-        this.email = email;
-        this.phone = phone;
-        this.age = age;
-    }
 
     public workers(String fullName, String surname, String patronymic, String position, String email, String phone, double salary, String age) {
         this.fullName = fullName;
@@ -26,30 +25,6 @@ public class workers {
         this.age = age;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
 
     public String getFullName() {
         return fullName;
